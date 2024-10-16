@@ -28,7 +28,7 @@ const Filter = ({ filters, onFilterChange }) => {
       <div className="bg-gray-100 rounded-md max-w-md w-full p-4"> 
         <h2 className="text-xl font-bold mb-4 text-center">Filter Products</h2>
 
-        {/* Category Filter */}
+        {/* Category */}
         <select
           name="category"
           value={selectedFilters.category}
@@ -43,7 +43,7 @@ const Filter = ({ filters, onFilterChange }) => {
           ))}
         </select>
 
-        {/* Brand Filter */}
+        {/* Brand  */}
         <select
           name="brand"
           value={selectedFilters.brand}
@@ -58,7 +58,7 @@ const Filter = ({ filters, onFilterChange }) => {
           ))}
         </select>
 
-        {/* Availability Filter */}
+        {/* Availability  */}
         <select
           name="availability"
           value={selectedFilters.availability}
@@ -70,7 +70,7 @@ const Filter = ({ filters, onFilterChange }) => {
           <option value="false">Not Available</option>
         </select>
 
-        {/* Price Range Filter */}
+        {/* Price Range  */}
         <select
           name="priceRange"
           value={selectedFilters.priceRange}
@@ -85,7 +85,7 @@ const Filter = ({ filters, onFilterChange }) => {
           <option value="1000+">Above $1000</option>
         </select>
 
-        {/* Product Tag Filter */}
+        {/* Product Tag  */}
         <select
           name="tag"
           value={selectedFilters.tag}
@@ -100,7 +100,6 @@ const Filter = ({ filters, onFilterChange }) => {
           ))}
         </select>
 
-        {/* Reset Button */}
         <button
           onClick={handleReset}
           className="mt-4 bg-red-500 text-white py-2 px-4 rounded-md hover:bg-red-600 transition duration-200 w-full"

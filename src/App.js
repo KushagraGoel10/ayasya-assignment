@@ -13,8 +13,8 @@ function App() {
 
   return (
     <div className="App">
-      <Navbar onSearch={handleSearch} /> {/* Add Navbar here */}
-      <ProductList searchTerm={searchTerm} /> {/* Pass searchTerm to ProductList */}
+      <Navbar onSearch={handleSearch} /> 
+      <ProductList searchTerm={searchTerm} /> 
     </div>
   );
 }

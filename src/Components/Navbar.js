@@ -7,7 +7,7 @@ const Navbar = ({ onSearch }) => {
 
   const handleSearch = (e) => {
     e.preventDefault();
-    onSearch(searchTerm); // Call the parent component's search function
+    onSearch(searchTerm);
   };
 
   return (
@@ -16,8 +16,8 @@ const Navbar = ({ onSearch }) => {
         <a
           href="#"
           onClick={(e) => {
-            e.preventDefault(); // Prevent the default anchor behavior
-            window.location.reload(); // Refresh the page
+            e.preventDefault(); 
+            window.location.reload();
           }}
           className="text-white text-2xl font-bold mr-4"
         >

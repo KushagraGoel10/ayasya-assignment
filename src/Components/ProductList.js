@@ -2,7 +2,7 @@
     import Pagination from './Pagination';
     import Filter from './Filter'; 
 
-    
+
     const ProductList = ({ searchTerm }) => {
     const [products, setProducts] = useState([]);
     const [currentPage, setCurrentPage] = useState(1);
@@ -27,7 +27,7 @@
         .then((data) => {
             setProducts(data);
 
-            // Extract unique filter options from products
+            
             const uniqueCategories = [...new Set(data.map((p) => p.product_category))];
             const uniqueBrands = [...new Set(data.map((p) => p.product_brand))];
             const uniqueTags = [...new Set(data.flatMap((p) => p.product_tags))];
@@ -50,7 +50,7 @@
         
     const handleFilterChange = (updatedFilters) => {
         setSelectedFilters(updatedFilters);
-        setCurrentPage(1); // Reset to page 1 when filters change
+        setCurrentPage(1); 
     };
 
     const applyFilters = (product) => {
@@ -99,7 +99,6 @@
     return (
         <div className="p-4">
 
-        {/* Render Filter Component */}
         <Filter filters={filters} onFilterChange={handleFilterChange} />
         <h1 className="text-6xl font-bold mb-6">Product List</h1>
 
