@@ -31,7 +31,7 @@ const Navbar = ({ onSearch }) => {
             placeholder="Search products..."
             className="p-3 rounded-l-md border border-gray-300 flex-grow mr-2"
           />
-          <button type="submit" className="bg-blue-700 text-white p-3 rounded-r-md">
+          <button type="submit" className="bg-blue-700 text-white p-3 rounded-r-md hover:bg-cyan-500">
             Search
           </button>
         </form>
